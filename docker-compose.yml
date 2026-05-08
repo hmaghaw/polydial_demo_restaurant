@@ -8,7 +8,7 @@ services:
       - ./cardsmax:/app
       - /app/node_modules
     working_dir: /app
-    command: sh -c "npm install && npm run dev -- --port 3015"
+    command: sh -c "npm run dev -- --port 3015"
     restart: unless-stopped
 
   coffeehome:
@@ -20,7 +20,7 @@ services:
       - ./coffeehome:/app
       - /app/node_modules
     working_dir: /app
-    command: sh -c "npm install && npm run dev -- --port 3010"
+    command: sh -c "npm run dev -- --port 3010"
     restart: unless-stopped
 
   halalcooking:
@@ -32,7 +32,7 @@ services:
       - ./halalcooking:/app
       - /app/node_modules
     working_dir: /app
-    command: sh -c "npm install && npm run dev -- --port 3011"
+    command: sh -c "npm run dev -- --port 3011"
     restart: unless-stopped
 
   islamic-heritage:
@@ -44,7 +44,7 @@ services:
       - ./islamic-heritage:/app
       - /app/node_modules
     working_dir: /app
-    command: sh -c "npm install && npm run dev -- --port 3012"
+    command: sh -c "npm run dev -- --port 3012"
     restart: unless-stopped
 
   muslimfamily:
@@ -56,7 +56,7 @@ services:
       - ./muslimfamily:/app
       - /app/node_modules
     working_dir: /app
-    command: sh -c "npm install && npm run dev -- --port 3013"
+    command: sh -c "npm run dev -- --port 3013"
     restart: unless-stopped
 
   wefind:
@@ -68,5 +68,5 @@ services:
       - ./wefind:/app
       - /app/node_modules
     working_dir: /app
-    command: sh -c "npm install && npm run dev -- --port 3014"
+    command: sh -c "npm run dev -- --port 3014"
     restart: unless-stopped

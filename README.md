@@ -1,1 +1,1 @@
-docker build -t my-react-app .
+docker build -t react-vite-app:latest .
