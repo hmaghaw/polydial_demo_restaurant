@@ -9,25 +9,25 @@ services:
       - /app/node_modules
     restart: unless-stopped
 
-  coffeehome:
-    build: coffeehome
-    container_name: coffeehome
-    ports:
-      - "3010:3010"
-    volumes:
-      - ./coffeehome:/app
-      - /app/node_modules
-    restart: unless-stopped
-
-  halalcooking:
-    build: halalcooking
-    container_name: halalcooking
-    ports:
-      - "3011:3011"
-    volumes:
-      - ./halalcooking:/app
-      - /app/node_modules
-    restart: unless-stopped
+#  coffeehome:
+#    build: coffeehome
+#    container_name: coffeehome
+#    ports:
+#      - "3010:3010"
+#    volumes:
+#      - ./coffeehome:/app
+#      - /app/node_modules
+#    restart: unless-stopped
+#
+#  halalcooking:
+#    build: halalcooking
+#    container_name: halalcooking
+#    ports:
+#      - "3011:3011"
+#    volumes:
+#      - ./halalcooking:/app
+#      - /app/node_modules
+#    restart: unless-stopped
 
 #  islamic-heritage:
 #    build: islamic-heritage
