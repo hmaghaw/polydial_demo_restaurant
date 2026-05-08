@@ -1,60 +1,72 @@
 services:
   cardsmax:
-    build: cardsmax
+    image: react-vite-app:latest
     container_name: cardsmax
     ports:
       - "3015:3015"
     volumes:
       - ./cardsmax:/app
       - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --port 3015"
     restart: unless-stopped
 
-#  coffeehome:
-#    build: coffeehome
-#    container_name: coffeehome
-#    ports:
-#      - "3010:3010"
-#    volumes:
-#      - ./coffeehome:/app
-#      - /app/node_modules
-#    restart: unless-stopped
-#
-#  halalcooking:
-#    build: halalcooking
-#    container_name: halalcooking
-#    ports:
-#      - "3011:3011"
-#    volumes:
-#      - ./halalcooking:/app
-#      - /app/node_modules
-#    restart: unless-stopped
+  coffeehome:
+    image: react-vite-app:latest
+    container_name: coffeehome
+    ports:
+      - "3010:3010"
+    volumes:
+      - ./coffeehome:/app
+      - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --port 3010"
+    restart: unless-stopped
 
-#  islamic-heritage:
-#    build: islamic-heritage
-#    container_name: islamic-heritage
-#    ports:
-#      - "3012:3012"
-#    volumes:
-#      - ./islamic-heritage:/app
-#      - /app/node_modules
-#    restart: unless-stopped
-#
-#  muslimfamily:
-#    build: muslimfamily
-#    container_name: muslimfamily
-#    ports:
-#      - "3013:3013"
-#    volumes:
-#      - ./muslimfamily:/app
-#      - /app/node_modules
-#    restart: unless-stopped
-#
-#  wefind:
-#    build: wefind
-#    container_name: wefind
-#    ports:
-#      - "3014:3014"
-#    volumes:
-#      - ./wefind:/app
-#      - /app/node_modules
-#    restart: unless-stopped
+  halalcooking:
+    image: react-vite-app:latest
+    container_name: halalcooking
+    ports:
+      - "3011:3011"
+    volumes:
+      - ./halalcooking:/app
+      - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --port 3011"
+    restart: unless-stopped
+
+  islamic-heritage:
+    image: react-vite-app:latest
+    container_name: islamic-heritage
+    ports:
+      - "3012:3012"
+    volumes:
+      - ./islamic-heritage:/app
+      - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --port 3012"
+    restart: unless-stopped
+
+  muslimfamily:
+    image: react-vite-app:latest
+    container_name: muslimfamily
+    ports:
+      - "3013:3013"
+    volumes:
+      - ./muslimfamily:/app
+      - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --port 3013"
+    restart: unless-stopped
+
+  wefind:
+    image: react-vite-app:latest
+    container_name: wefind
+    ports:
+      - "3014:3014"
+    volumes:
+      - ./wefind:/app
+      - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --port 3014"
+    restart: unless-stopped
