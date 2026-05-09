@@ -19,7 +19,7 @@
 set -e
 
 # ── CONFIGURE THIS ────────────────────────────────────────
-EMAIL="your@email.com"   # Let's Encrypt expiry notifications
+EMAIL="hanyelgaml@ideationmax.com"   # Let's Encrypt expiry notifications
 STAGING=0                # Set to 1 while testing (no rate limits)
 # ─────────────────────────────────────────────────────────
 
